@@ -1,10 +1,17 @@
 // components/CTA.js
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const CTA = () => {
   return (
-    <section className="bg-light-gray">
+    <motion.section 
+      className="bg-light-gray"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container mx-auto px-6 py-20 text-center">
         <h2 className="font-display text-3xl font-bold tracking-tight text-dark-gray sm:text-4xl">
           Have an idea or want to collaborate?
@@ -21,7 +28,7 @@ const CTA = () => {
           </Link>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

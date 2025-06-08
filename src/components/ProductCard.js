@@ -23,11 +23,11 @@ const ProductCard = ({ icon, title, description, href }) => {
         {description}
       </p>
 
-      {/* Link */}
+      {/* Link - Updated for better visibility */}
       <Link 
         href={href} 
-        className="mt-4 inline-block font-semibold text-primary-orange hover:text-orange-500"
-        target="_blank" // Opens the link in a new tab
+        className="mt-4 inline-block font-bold text-dark-gray hover:underline"
+        target="_blank"
         rel="noopener noreferrer"
       >
         Learn more →

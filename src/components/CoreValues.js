@@ -1,5 +1,6 @@
 // components/CoreValues.js
 
+import { motion } from 'framer-motion';
 import {
   SparklesIcon,
   CursorArrowRaysIcon,
@@ -32,7 +33,13 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <section className="bg-white py-20 sm:py-24">
+    <motion.section 
+      className="bg-white py-20 sm:py-24"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto">
@@ -61,7 +68,7 @@ const CoreValues = () => {
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
