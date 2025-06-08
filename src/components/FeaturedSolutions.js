@@ -28,8 +28,8 @@ const solutions = [
 
 const FeaturedSolutions = () => {
   return (
-    <motion.section 
-      className="bg-light-gray py-20 sm:py-24"
+    <motion.section
+      className="bg-light-gray dark:bg-gray-900 py-20 sm:py-24"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -38,10 +38,10 @@ const FeaturedSolutions = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-dark-gray sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-dark-gray dark:text-white sm:text-4xl">
             Our Handcrafted Solutions
           </h2>
-          <p className="mt-4 text-lg text-medium-gray">
+          <p className="mt-4 text-lg text-medium-gray dark:text-gray-400">
             Every tool we build is designed with simplicity, usability, and functionality at its core.
           </p>
         </div>

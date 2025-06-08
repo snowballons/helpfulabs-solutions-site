@@ -4,6 +4,7 @@ import { Inter, Manrope } from 'next/font/google';
 import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { DarkModeProvider } from '../contexts/DarkModeContext';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -42,10 +43,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${manrope.variable} font-sans text-dark-gray bg-[#f8f9fa] bg-[url('/subtle-pattern.png')] bg-repeat`}>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className={`${inter.variable} ${manrope.variable} font-sans text-dark-gray dark:text-gray-100 bg-[#f8f9fa] dark:bg-gray-900 bg-[url('/subtle-pattern.png')] bg-repeat`}>
+        <DarkModeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </DarkModeProvider>
       </body>
     </html>
   );

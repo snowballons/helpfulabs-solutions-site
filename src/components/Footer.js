@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark-gray text-white">
+    <footer className="bg-dark-gray dark:bg-gray-950 text-white">
       <div className="container mx-auto px-6 py-12">
         {/* Top section with logo and nav */}
         <div className="flex flex-col items-center justify-between md:flex-row">
@@ -22,36 +22,36 @@ const Footer = () => {
                 className="brightness-0 invert" // CSS filter to make the logo white
               />
             </Link>
-            <p className="mt-4 text-sm text-gray-400">Software, Simplified.</p>
+            <p className="mt-4 text-sm text-gray-400 dark:text-gray-500">Software, Simplified.</p>
           </div>
 
           {/* Navigation Links */}
           <div className="mt-8 flex space-x-8 md:mt-0">
-            <Link href="/products" className="text-gray-300 hover:text-white">
+            <Link href="/products" className="text-gray-300 dark:text-gray-400 hover:text-white">
               Products
             </Link>
-            <Link href="/mission" className="text-gray-300 hover:text-white">
+            <Link href="/mission" className="text-gray-300 dark:text-gray-400 hover:text-white">
               Mission
             </Link>
-            <Link href="/contact" className="text-gray-300 hover:text-white">
+            <Link href="/contact" className="text-gray-300 dark:text-gray-400 hover:text-white">
               Contact
             </Link>
           </div>
         </div>
 
         {/* Divider */}
-        <hr className="my-8 border-gray-600" />
+        <hr className="my-8 border-gray-600 dark:border-gray-700" />
 
         {/* Bottom section with copyright and socials */}
         <div className="flex flex-col items-center justify-between sm:flex-row">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 dark:text-gray-500">
             © {currentYear} Helpfulabs Solutions. All Rights Reserved.
           </p>
-          
+
           {/* Social Links */}
           <div className="mt-4 flex space-x-6 sm:mt-0">
-            <Link href="#" className="text-gray-400 hover:text-white">GitHub</Link>
-            <Link href="#" className="text-gray-400 hover:text-white">LinkedIn</Link>
+            <Link href="https://github.com/snowballons" className="text-gray-400 dark:text-gray-500 hover:text-white">GitHub</Link>
+            <Link href="#" className="text-gray-400 dark:text-gray-500 hover:text-white">LinkedIn</Link>
           </div>
         </div>
       </div>

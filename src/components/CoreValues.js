@@ -34,8 +34,8 @@ const values = [
 
 const CoreValues = () => {
   return (
-    <motion.section 
-      className="bg-white py-20 sm:py-24"
+    <motion.section
+      className="bg-white dark:bg-gray-800 py-20 sm:py-24"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -44,10 +44,10 @@ const CoreValues = () => {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto">
-          <h2 className="font-display text-3xl font-bold tracking-tight text-dark-gray sm:text-4xl">
+          <h2 className="font-display text-3xl font-bold tracking-tight text-dark-gray dark:text-white sm:text-4xl">
             Our Guiding Principles
           </h2>
-          <p className="mt-4 text-lg text-medium-gray">
+          <p className="mt-4 text-lg text-medium-gray dark:text-gray-400">
             These four values are the foundation of everything we build and every decision we make.
           </p>
         </div>
@@ -56,13 +56,13 @@ const CoreValues = () => {
         <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-4">
           {values.map((value) => (
             <div key={value.name} className="text-center">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary-orange mx-auto">
-                <value.icon className="h-7 w-7 text-white" aria-hidden="true" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-black dark:bg-white mx-auto">
+                <value.icon className="h-7 w-7 text-white dark:text-black" aria-hidden="true" />
               </div>
-              <h3 className="mt-5 font-display text-xl font-semibold leading-7 text-dark-gray">
+              <h3 className="mt-5 font-display text-xl font-semibold leading-7 text-dark-gray dark:text-white">
                 {value.name}
               </h3>
-              <p className="mt-2 text-base leading-7 text-medium-gray">
+              <p className="mt-2 text-base leading-7 text-medium-gray dark:text-gray-400">
                 {value.description}
               </p>
             </div>
