@@ -16,7 +16,7 @@ const Footer = () => {
             <Link href="/">
               <Image
                 src="/logo.png"
-                alt="HelpLabs Solutions Logo"
+                alt="Helpfulabs Solutions Logo"
                 width={180}
                 height={45}
                 className="brightness-0 invert" // CSS filter to make the logo white
@@ -45,7 +45,7 @@ const Footer = () => {
         {/* Bottom section with copyright and socials */}
         <div className="flex flex-col items-center justify-between sm:flex-row">
           <p className="text-sm text-gray-400">
-            © {currentYear} HelpLabs Solutions. All Rights Reserved.
+            © {currentYear} Helpfulabs Solutions. All Rights Reserved.
           </p>
           
           {/* Social Links */}

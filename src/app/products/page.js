@@ -5,8 +5,8 @@ import { BoltIcon, CodeBracketIcon, ArrowDownTrayIcon } from '@heroicons/react/2
 import CTA from '../../components/CTA';
 
 export const metadata = {
-  title: 'Our Products | HelpLabs Solutions',
-  description: 'Explore all the extensions, tools, and solutions built by HelpLabs.',
+  title: 'Our Products | Helpfulabs Solutions',
+  description: 'Explore all the extensions, tools, and solutions built by Helpfulabs.',
 };
 
 // We define the product data here. In a real app, this might come from a database.

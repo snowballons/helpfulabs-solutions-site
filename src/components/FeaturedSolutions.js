@@ -1,4 +1,5 @@
 // components/FeaturedSolutions.js
+'use client';
 
 import { motion } from 'framer-motion';
 import ProductCard from './ProductCard';

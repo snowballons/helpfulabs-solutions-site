@@ -4,8 +4,8 @@
 import { submitForm } from '../../lib/actions';
 
 export const metadata = {
-  title: 'Contact Us | HelpLabs Solutions',
-  description: 'Get in touch with HelpLabs Solutions. We\'d love to hear from you!',
+  title: 'Contact Us | Helpfulabs Solutions',
+  description: 'Get in touch with Helpfulabs Solutions. We\'d love to hear from you!',
 };
 
 const ContactPage = () => {

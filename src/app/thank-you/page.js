@@ -2,7 +2,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Thank You | HelpLabs Solutions',
+  title: 'Thank You | Helpfulabs Solutions',
 };
 
 const ThankYouPage = () => {

@@ -1,4 +1,5 @@
 // components/CoreValues.js
+'use client';
 
 import { motion } from 'framer-motion';
 import {

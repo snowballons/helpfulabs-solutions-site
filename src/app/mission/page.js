@@ -6,7 +6,7 @@ import CTA from "../../components/CTA";
 // -----------------------------
 
 export const metadata = {
-  title: 'Our Mission | HelpLabs Solutions',
+  title: 'Our Mission | Helpfulabs Solutions',
   description: 'Learn about our mission to bridge the software usability gap and the future we are building.',
 };
 
@@ -22,8 +22,8 @@ const MissionPage = () => {
               Bridging the Usability Gap
             </h1>
             <p className="mt-6 text-lg leading-8 text-medium-gray">
-              We love the power of modern software, but we see that its complexity often creates a barrier for everyday users. Great features are useless if they are difficult to find or hard to use. 
-              <span className="font-semibold text-dark-gray"> HelpLabs Solutions exists to break down that barrier.</span>
+              We love the power of modern software, but we see that its complexity often creates a barrier for everyday users. Great features are useless if they are difficult to find or hard to use.
+              <span className="font-semibold text-dark-gray"> Helpfulabs Solutions exists to break down that barrier.</span>
             </p>
           </div>
           
