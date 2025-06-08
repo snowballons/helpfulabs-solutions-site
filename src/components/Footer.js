@@ -44,9 +44,20 @@ const Footer = () => {
 
         {/* Bottom section with copyright and socials */}
         <div className="flex flex-col items-center justify-between sm:flex-row">
-          <p className="text-sm text-gray-400 dark:text-gray-500">
-            © {currentYear} Helpfulabs Solutions. All Rights Reserved.
-          </p>
+          <div className="flex flex-col items-center sm:items-start">
+            <p className="text-sm text-gray-400 dark:text-gray-500">
+              © {currentYear} Helpfulabs Solutions. All Rights Reserved.
+            </p>
+            <div className="mt-2 flex space-x-4">
+              <Link href="/terms" className="text-xs text-gray-500 dark:text-gray-600 hover:text-gray-300">
+                Terms & Conditions
+              </Link>
+              <span className="text-xs text-gray-500 dark:text-gray-600">•</span>
+              <Link href="/privacy" className="text-xs text-gray-500 dark:text-gray-600 hover:text-gray-300">
+                Privacy Policy
+              </Link>
+            </div>
+          </div>
 
           {/* Social Links */}
           <div className="mt-4 flex space-x-6 sm:mt-0">

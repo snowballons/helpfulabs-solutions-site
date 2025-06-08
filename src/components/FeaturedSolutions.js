@@ -10,7 +10,7 @@ const solutions = [
     icon: BoltIcon,
     title: 'YT-Channel-Importer',
     description: 'Batch Import & Subscribe to YouTube Channels Effortlessly from lists or webpages.',
-    href: 'https://github.com/snowballons/YT-Channel-Importer',
+    href: 'https://yt-importer.helpfulabssolutions.com',
   },
   {
     icon: CodeBracketIcon,
