@@ -1,0 +1,48 @@
+{
+  "name": "helplabs-solutions-website",
+  "version": "1.0.0",
+  "description": "Helpfulabs Solutions - Business automation and systemization consultancy website",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "node -r dotenv/config --experimental-modules scripts/seed.mjs"
+  },
+  "dependencies": {
+    "@calcom/embed-react": "^1.5.3",
+    "@types/node": "^24.3.0",
+    "@types/react": "^19.1.11",
+    "@types/react-dom": "^19.1.8",
+    "autoprefixer": "^10.4.21",
+    "convex": "^1.26.2",
+    "dotenv": "^17.2.1",
+    "eslint": "^9.34.0",
+    "eslint-config-next": "^15.5.2",
+    "next": "^15.5.2",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "resend": "^6.0.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowballons/helpfulabs-solutions-site.git"
+  },
+  "keywords": [
+    "business-automation",
+    "systemization",
+    "consultancy",
+    "kenya",
+    "east-africa"
+  ],
+  "author": "Helpfulabs Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowballons/helpfulabs-solutions-site/issues"
+  },
+  "homepage": "https://github.com/snowballons/helpfulabs-solutions-site#readme"
+}
